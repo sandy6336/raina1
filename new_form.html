@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <style>
+            body {
+                background-color: rgb(186, 218, 224);
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-align: center;
+            }
+            form {
+                background-color: rgb(118, 167, 167);
+                max-width: 500px;
+                margin: 50px auto;
+                padding: 50px 30px;
+                box-shadow: 2px 5px 10px rgb(21, 137, 163);
+            }
+            .form_control {
+                text-align: left;
+                margin-bottom: 10px;
+            }
+            .form_control label {
+                display: block;
+                margin-bottom: 10px;
+            }
+            .form_control input ,
+            .form_control textarea {
+                border: 1.5px solid rgb(0, 128, 137);
+                border-radius: 20px;
+                font-family: inherit;
+                padding: 10px;
+                display: block;
+                width: 95%;
+            }
+            .form_control input[type=radio],
+            .form_control input[type=checkbox] {
+                display: inline-block;
+                width: auto;
+            }
+            button {
+                background-color:rgb(53, 111, 138);
+                border: 1px solid rgb(0, 128, 137);
+                border-radius:20px;
+                font-family: inherit;
+                font: size 21px;
+                display: block;
+                width: 100%;
+                margin-top: 50px;
+                margin-bottom: 20px;
+
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1 id = "main">Cousre Selection Form</h1>
+        <form id = "form">
+            <div class ="form_control">
+                <label for = "name" id="label_name">
+                    Name
+                </label>
+                <input type="text" id="name"/>
+            </div>
+            <div class ="form_control">
+                <label for ="email" id="label_email">
+                    Email
+                </label>
+                <input type="email" id="email"/>
+            </div>
+            <div class="form_control">
+                <label for = "age" id = "label_age">
+                    Age
+                </label>
+                <input type="number" id="age"/>
+            </div>
+            <div class="form_control">
+                <label>
+                    Gender
+                </label>
+                <label for="recommed-1">
+                    <input type="radio"
+                           id="recommed-1"
+                           name="recommed">Male</input>
+                </label>
+                <label for="recommed-2">
+                    <input type="radio"
+                           id="recommed-2"
+                           name="recommed">Female</input>
+                </label>
+                <label for="recommed-3">
+                    <input type="radio"
+                           id="recommed-3"
+                           name="recommed">Other</input>
+                </label>
+            </div>
+            <div class="form_control">
+                <label>Course</label>
+                <label for ="input">
+                    <br>
+                    <input type="checkbox" name="s">ECE<br>
+                    <input type="checkbox" name="s">EEE<br>
+                    <input type="checkbox" name="s">CSE<br>
+                    <input type="checkbox" name="s">ME<br>
+                    <input type="checkbox" name="s">CIVIL<br>
+                    <input type="checkbox" name="s">AI<br>
+                </label>
+            </div>
+            <div class="form_control">
+                <label for ="requests">
+                    Any requests
+                </label>
+                <textarea name="requests" id="requests"></textarea>
+            </div>
+            <button type="submit" value="submit">Submit</button>
+        </form>
+    </body>
+</html>
